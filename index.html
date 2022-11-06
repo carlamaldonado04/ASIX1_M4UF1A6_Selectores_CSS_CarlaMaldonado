@@ -6,14 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
-    <link rel="stylesheet" href="estils.css" type="text/css" />
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
    <style>
+    body { font-family: 'Quicksand', sans-serif;
+    margin-right: 20px;
+    margin-left: 30px;
+
+    }
   
         .selectors {
             border-color:darkcyan;
             border-width: 2px;
             border-style:solid;
+            padding: 40px ;
+            
+
         }
 
         h1 {
@@ -21,17 +30,26 @@
             color:darkcyan;
             font-size: 25px;
             text-align: center;
+            
         }
 
         p {
-            font-size: 12px;
+            font-size: 13px;
+            color:black
+
+        }
+        azul { color: blue;
 
         }
 
-        .selector{
-            font-size: 20px;
-            background-color: darkcyan;
-            color: white;
+
+
+        .selector{  background-color: darkcyan;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 20px;color: white;
+          
+        
         }
         span { background-color: black;
             background-size: 12px;
@@ -41,10 +59,31 @@
         }
 
         #universal {  font-size: 20px;
-            background-color: darkcyan;
+            background-color:darkcyan ;
             color:beige;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 12px;
         }
 
+        h3 { background-color: rgb(131, 188, 188);
+            font-size: 16px;
+            color: black;
+            border-radius: 5px;
+            padding: 7px;
+        }
+
+        img { width:855px;
+            height:650px;
+            border-color: darkcyan;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 5px;
+
+
+
+
+        }
 
     </style>
 
@@ -56,30 +95,20 @@
 
 <body>
     <h1>CSS Selectors </h1>
-
-
-
     <p>A CSS selector selects the HTML element(s) you want to style.</p>
-
-
-
     <div class="selectors">
         <h2>CSS Selectors</h2>
         <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
         <p>We can divide CSS selectors into five categories:</p>
         <ul>
             <li>Simple selectors (select elements based on name, id, class)</li>
-            <li>Combinator selectors (select elements based on a specific relationship between them)</li>
-            <li>Pseudo-class selectors (select elements based on a certain state)
+            <li><azul>Combinator selectors</azul> (select elements based on a specific relationship between them)</li>
+            <li><azul>Pseudo-class selectors</azul> (select elements based on a certain state)
             </li>
-            <li>Pseudo-elements selectors (select and style a part of an element)</li>
-            <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+            <li><azul>Pseudo-elements selectors</azul> (select and style a part of an element)</li>
+            <li><azul>Attribute selectors</azul> (select elements based on an attribute or attribute value)</li>
         </ul>
     </div>
-
-
-
-
 
     <hr>
     <h2 class="selector">The CSS <span>element</span> Selector</h2>
